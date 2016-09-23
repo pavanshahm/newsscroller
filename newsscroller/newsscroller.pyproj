@@ -22,7 +22,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="displayStream.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newsCollection.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="newsObject.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="newsscroller.py" />
+    <Compile Include="scrollerBase.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

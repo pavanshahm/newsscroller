@@ -13,9 +13,11 @@ def main():
         a = Article(url)
         a.download()
         a.parse()
-        print(a.title)
-        print(a.text[:150])
-
+        try:
+            print(a.title)
+            print(a.text[:150])
+        except:
+            pass
 
 
 if __name__ == "__main__":
