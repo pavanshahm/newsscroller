@@ -15,7 +15,7 @@ def main():
         a.parse()
         try:
             print(a.title)
-            print(a.text[:150])
+            print(a.text)
         except:
             pass
 
