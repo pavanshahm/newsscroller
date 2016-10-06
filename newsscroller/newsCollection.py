@@ -1,11 +1,11 @@
 import newspaper
-import newsObject
+from newsObject import newsObject
 
 from newspaper import Article
 
 class newsCollection(object):
     """Provides Abstraction for all the NewsPaper API stuff including validations"""
-    def  __init__():
+    def  __init__(self):
         self.news = newsObject()
 
     def initNews(firstTime):
@@ -32,4 +32,4 @@ class newsCollection(object):
         return self.news.pop()
     
     def empty():
-        return self.news.lenght() == 0
+        return self.news.length() == 0

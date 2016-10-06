@@ -1,24 +1,12 @@
 import newspaper
 from newspaper import Article
+import win32api, win32con, win32gui, win32ui
+from scrollerBase import scrollerBase
 
 def main():
-    print("Hello World")
-    cnn_paper = newspaper.build('http://gamnesia.com', memoize_articles=False)
-
-    for article in cnn_paper.articles:
-        print(article.url)
-    
-    for article in cnn_paper.articles:
-        url = article.url
-        a = Article(url)
-        a.download()
-        a.parse()
-        try:
-            print(a.title)
-            print(a.text)
-        except:
-            pass
+    newsScroller = scrollerBase()
 
 
-if __name__ == "__main__":
-	main()
+if __name__ == '__main__':
+    main()
+

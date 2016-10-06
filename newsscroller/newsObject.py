@@ -1,13 +1,13 @@
 class newsObject(object):
     """description of class"""
-    def __init__():
-        reset()
+    def __init__(self):
+        self.reset()
 
-    def reset():
+    def reset(self):
         self.articles = []
         self.iter = -1
 
-    def getIter():
+    def getIter(self):
         return self.iter
 
     def add(title, article):
@@ -16,8 +16,8 @@ class newsObject(object):
     def __getitem__(self, index):
         return self.articles[index]
     
-    def length():
+    def length(self):
         return len(self.articles)
 
-    def pop():
+    def pop(self):
         return self.articles.pop()

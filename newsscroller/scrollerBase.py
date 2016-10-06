@@ -1,7 +1,9 @@
-class scrollerBase:
-    """Skeleton Class that manages data input and output"""
+from newsCollection import newsCollection
+from displayStream import displayStream
 
-    def __init__():
-        self.rando = 0
-    def run(self):
-        
+class scrollerBase:
+    """ Class that manages data input and output"""
+
+    def __init__(self):
+        #self.allNews = newsCollection()
+        self.stream = displayStream()
